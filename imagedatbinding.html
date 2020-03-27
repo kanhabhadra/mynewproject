@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script>
+			function getimage(imagename){
+				//alert(imagename);//to get pathof image
+				document.getElementById("myimage").src=imagename;
+				
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<h1>javascript image databinding example</h1>
+			<img src="image1.jpg" id="myimage" height="300" width="600">
+			<br><br>
+			<img src="image1.jpg" height="50" width="100" onclick="getimage('this.src')">
+			<img src="image2.jpg" height="50" width="100" onclick="getimage('this.src')">
+			<img src="image3.jpeg" height="50" width="100" onclick="getimage('this.src')">
+			<img src="image4.jpeg" height="50" width="100" onclick="getimage('this.src')">
+			<img src="image5.jpeg" height="50" width="100" onclick="getimage('this.src')">
+		<center>
+	</body>
+</html>

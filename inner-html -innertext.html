@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script>
+			function one(){
+				var msg="<p> success,message sent</p>";
+				document.getElementById("abc").innerText=msg;
+			}
+			function two(){
+				var msg="<h2> success,message sent</h2>";
+				document.getElementById("abc").innerHTML=msg;
+			}
+			
+		</script>
+	</head>
+	<body>
+		<center>
+		<p>innerText, use to display content in text format</p>
+		<p>innerHTML, use to display content in html format</p>
+			<h1>javascript differencebetween innerText and innerHTML</h1>
+			<button onclick="two()">innerHTML</button>
+			<button onclick="one()">innerText</button>
+			<br><br>
+			<div id="abc">
+			
+			</div>
+		</center>
+	</body>
+</html>
